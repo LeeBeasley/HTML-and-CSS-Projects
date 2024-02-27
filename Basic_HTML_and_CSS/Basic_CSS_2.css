@@ -1,0 +1,8 @@
+p {
+    color: whitesmoke;
+    background-color: grey;
+    font-style: oblique;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 4px 2px 4px #0000ff;
+}
