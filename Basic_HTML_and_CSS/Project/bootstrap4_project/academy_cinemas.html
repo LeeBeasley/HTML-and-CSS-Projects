@@ -68,18 +68,17 @@
               <div class="col-sm">
 
                 <h3>Now Playing:</h3>
-                <ul class="nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Brown Sugar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Love and Basketball</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">The Matrix</a>
-                  </li>
-                </ul
-
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#brown-sugar">Brown Sugar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#love-and-basketball">Love and Basketball</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#the-matrix">The Matrix</a>
+                      </li>
+                    </ul>
               
 
               </div>
@@ -92,9 +91,9 @@
             <div class="row">
 
               <!-- Movie Box 1 -->
-              <div class="col-md-4">
+              <div class="col-md-4" id="brown-sugar">
                 <div class="card">
-                  <img src="./img/brown_sugar_2.jpg" class="card-img-top" alt="movie 1">
+                  <img src="./img/brown_sugar_2.jpg" class="card-img-top" alt="Brown Sugar">
                   <div class="card-body">
                     <h5 class="card-title">Brown Sugar</h5>
                     <p class="card-text">Friends since childhood, a magazine editor and a hip-hop record executive stumble into romantic territory.</p>
@@ -109,9 +108,9 @@
               </div>
           
               <!-- Movie Box 2 -->
-              <div class="col-md-4">
+              <div class="col-md-4" id="love-and-basketball">
                 <div class="card">
-                  <img src="./img/love_basketball.jpg" class="card-img-top" alt="movie 2">
+                  <img src="./img/love_basketball.jpg" class="card-img-top" alt="Love and Basketball">
                   <div class="card-body">
                     <h5 class="card-title">Love & Basketball</h5>
                     <p class="card-text">Monica and Quincy love and play basketball together through many life challenges from childhood to adulthood.</p>
@@ -126,12 +125,11 @@
               </div>
           
               <!-- Movie Box 3 -->
-              <div class="col-md-4">
+              <div class="col-md-4" id="the-matrix">
                 <div class="card">
-                  <img src="./img/Matrix.jpg" class="card-img-top" alt="movie 3">
+                  <img src="./img/Matrix.jpg" class="card-img-top" alt="The Matrix">
                   <div class="card-body">
                     <h5 class="card-title">The Matrix</h5>
-
                     <p class="card-text">A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.</p>
                     <span class="badge badge-primary text-light">1:00 PM</span>
                     <span class="badge badge-secondary text-light">3:00 PM</span>
@@ -146,6 +144,21 @@
           </div>
           <!-- End of Showtimes-->
 
+          
+  
+   <!-- jumbotron heading -->
+          <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+                <h1 class="display-4 hidden-sm-down" style="color:#fff; font-family:roboto; font-weight:900; text-transform:uppercase;">Movie Deals</h1>
+                <p class="lead">Check out our monthly Deals</p>
+                <!--movie deals-->
+                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#register">See our monthly deals!</button>
+                <!--End of movie deals-->
+            </div>
+          </div>
+    <!-- jumbotron  -->
+
+
            <!-- Deals -->
           <div class="text-center">
           <form>
@@ -155,10 +168,12 @@
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
             </div>
           </div>
-            <button type="submit" class="btn btn-info text-warning">Sign up!</button>
+          <button type="button" class="btn btn-primary btn-info popover-dismiss"  data-container="body" data-toggle="popover" data-placement="top" data-content="Sumbit your email to receive great movie rewards!">
+        Sign Up!</button>
+          </span>
           </form>
           </div>
-
+     <!-- jumbotron heading ending -->
          
           <div id="deals" class="container my-7">
             <ul class="nav justify-content-center">
@@ -166,6 +181,8 @@
                 <small><a class="nav-link active" href="#">Movie Rewards</a></small>
               </li>
               <!-- End of Deals -->
+
+              <!--Footer-->
               <li class="nav-item">
                 <small><a class="nav-link" href="#">Movies@news.org</a></small>
               </li>
@@ -178,11 +195,55 @@
             </ul>
           </div>
     </div>
+    <!--End of footer-->
+  
+    <!--Form Modal-->
+            <div class="modal" tabindex="-1" role="dialog" id="register">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Register to receive movie deals</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">First Name</label>
+                        <input type="first name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter first name">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Last Name</label>
+                        <input type="last name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter last name">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      </div>
+                    </form> 
 
+
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <!--End of Modal-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
   </body>
+  <script>
+            $('.popover-dismiss').popover({
+          trigger: 'focus'
+        })
+  </script>
 </html>
