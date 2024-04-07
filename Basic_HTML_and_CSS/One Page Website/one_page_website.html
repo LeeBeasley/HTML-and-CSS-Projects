@@ -12,9 +12,9 @@
 <div class="wrap">
     <div class="menu-container">
         <ul class="menu">
-            <a href="#home"><li>HOME</li></a>
-            <a href="#gallery"><li>GALLERY</li></a>
-            <a href="#contact"><li>EVENTS</li></a>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#contact">EVENTS</a></li>
         </ul>
     </div>
 </div>
@@ -40,7 +40,7 @@
             <!-- PHOTO-CONTAINER 1-->
             <div class="photo-container">
                 <div class="photo"> 
-                    <img src="./Images/thumbnail_1.png" alt="">
+                    <img src="./Images/thumbnail_1.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow">
                     <div class="photo-overlay">
                         <h3 class="white-head">Click to Enlarge</h3>
                         <p>We have various weekly and monthly events! Join Us!</p>
@@ -53,7 +53,7 @@
             <!-- PHOTO-CONTAINER 2-->
             <div class="photo-container">
                 <div class="photo"> 
-                    <img src="./Images/thumbnail_2.png" alt="">
+                    <img src="./Images/thumbnail_2.png" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow">
                     <div class="photo-overlay">
                         <h3 class="white-head">Click to Enlarge</h3>
                         <p>We have various weekly and monthly events! Join Us!</p>
@@ -65,7 +65,7 @@
             <!-- PHOTO-CONTAINER 3-->
             <div class="photo-container">
                 <div class="photo"> 
-                    <img src="./Images/thumbnail_3.png" alt="">
+                    <img src="./Images/thumbnail_3.png" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow" >
                     <div class="photo-overlay">
                         <h3 class="white-head">Click to Enlarge</h3>
                         <p>We have various weekly and monthly events! Join Us!</p>
@@ -77,7 +77,7 @@
             <!-- PHOTO-CONTAINER 4-->
             <div class="photo-container">
                 <div class="photo"> 
-                    <img src="./Images/thumbnail_4.png" alt="">
+                    <img src="./Images/thumbnail_4.png" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow">
                     <div class="photo-overlay">
                         <h3 class="white-head">Click to Enlarge</h3>
                         <p>We have various weekly and monthly events! Join Us!</p>
@@ -89,7 +89,7 @@
             <!-- PHOTO-CONTAINER 5-->
             <div class="photo-container">
                 <div class="photo"> 
-                    <img src="./Images/thumbnail_5.png" alt="">
+                    <img src="./Images/thumbnail_5.png" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow">
                     <div class="photo-overlay">
                         <h3 class="white-head">Click to Enlarge</h3>
                         <p>We have various weekly and monthly events! Join Us!</p>
@@ -101,7 +101,7 @@
              <!-- PHOTO-CONTAINER 6-->
              <div class="photo-container">
                 <div class="photo"> 
-                    <img src="./Images/thumbnail_6.png" alt="">
+                    <img src="./Images/thumbnail_6.png" alt="" onclick="openModal();currentSlide(6)" class="hover-shadow">
                     <div class="photo-overlay">
                         <h3 class="white-head">Click to Enlarge</h3>
                         <p>We have various weekly and monthly events! Join Us!</p>
@@ -109,6 +109,51 @@
                 </div>
             </div>
             <!-- END PHOTO-CONTAINER 6-->
+
+            <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+  
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="./Images/thumbnail_1.png" style="width:100%">
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="./Images/thumbnail_2.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="./Images/thumbnail_3.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="./Images/thumbnail_4.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="./Images/thumbnail_5.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="./Images/thumbnail_6.png" style="width:100%">
+          </div>
+  
+  
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
 
         </div>
     </div>
@@ -154,6 +199,7 @@
        <p>www.metromotif.com &nbsp;|&nbsp; &copy; 2024</p>
     </div>
     <!-- END FOOTER-->
+    <script src="./JS/one_page_website.js"></script>
     </body>
 </html>
 
