@@ -1,5 +1,5 @@
 # HTML and CSS Projects
-#One Page Website. Click on HTML and CSS Projects
+One Page Website. Click on HTML and CSS Projects
 ## MetroMotif
 
 ### Overview
